@@ -67,7 +67,7 @@ WSGI_APPLICATION = 'the_gall.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        default='postgres://mysite:iyJwJ6Wpzf1pxTgvVdJKpZUMQVaXs99W@dpg-cphmp2cf7o1s739l93n0-a:5432/mysite_pns8',
+        default='postgres://the_gall_user:UxYULgKR0syk3VQtjyxJpYUxcEFwfXR9@dpg-cphniccf7o1s739li210-a/the_gall',
         conn_max_age=600
     )
 }
