@@ -66,10 +66,10 @@ WSGI_APPLICATION = 'the_gall.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.config({
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    })
+    'default': dj_database_url.config(
+        default='postgres://mysite:iyJwJ6Wpzf1pxTgvVdJKpZUMQVaXs99W@dpg-cphmp2cf7o1s739l93n0-a/mysite_pns8',
+        conn_max_age=600
+    )
 }
 
 
