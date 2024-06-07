@@ -32,6 +32,10 @@ nav ul li {
     margin-right: 5px;
 }
 
+nav ul li:last-child {
+    margin-right: 0;
+}
+
 nav ul li a {
     color: #000; /* Black text color */
     text-decoration: none;
@@ -48,16 +52,7 @@ nav ul li a:hover {
 
 /* Align Instagram icon to the right */
 .ig-link {
-    margin-left: auto; /* Push the Instagram link to the right */
     margin-right: 15px;
-}
-
-/* Mobile Styles */
-@media (max-width: 600px) {
-
-    nav ul li a {
-        font-size: 20px; /* Reduce font size for mobile */
-    }
 }
 
 /* Main content styles */
