@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+    <section class="hero">
+        <img src="https://i.imgur.com/OF5nS6r.png" alt="Hero Image">
+        <h1 class="fade-in-h1">Try it before you buy it</h1>
+    </section>
+
+    <div class="setlist">
+        {% for song in setlist %}
+        <div class="song">
+            <!-- Image URL -->
+            <img src="{{ song.thumbnail_url }}" alt="{{ song.title }}" class="thumbnail">
+            <!-- Song and Artist Name -->
+            <div class="song-info">
+                <strong>{{ song.title }}</strong><br>{{ song.artist }}
+            </div>
+            <!-- Duration -->
+            <p class="song-duration">
+                <span>{{ song.duration_minutes }}</span><span class="colon">:</span><span>{{ song.duration_seconds }}</span>
+            </p>         
+            <!-- Play button -->
+            <a href="{{ song.playback_url }}" target="_blank" class="btn btn-primary play-button">Play</a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

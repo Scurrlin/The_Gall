@@ -1,0 +1,256 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set black background and use Big Shoulders Display font */
+body {
+    background: 
+        /* Top half: solid black */
+        linear-gradient(#000, #000) top,
+        /* Bottom half: linear gradient from black to pink */
+        linear-gradient(to bottom, #000, #AA336A) bottom;
+    background-size: 100% 51%; /* Set background size to cover top and bottom halves */
+    background-repeat: no-repeat; /* Prevent background from repeating */
+    font-family: 'Big Shoulders Display', sans-serif;
+    color: #fff; /* Set text color to white */
+}
+
+/* Navigation styles */
+header {
+    background-image: linear-gradient(#ff6eff, #ff0099);
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #000; /* Black text color */
+    text-decoration: none;
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 40px; /* Adjust font size as needed */
+    font-weight: bold;
+    padding: 8px 12px; /* Add padding */
+    transition: all 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+/* Align Instagram icon to the right */
+.ig-link {
+    float: right;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #000;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Hero section */
+.hero {
+    text-align: center;
+    padding: 30px 0;
+    font-size: 30px;
+}
+
+.hero img {
+    width: 100%;
+    max-width: 600px; /* Adjust as needed */
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.cellphone-video {
+    width: 100%;
+    max-width: 600px; /* Adjust as needed */
+    height: auto;
+    display: block;
+    margin: 20px auto; /* Center the video */
+    border: none;
+}
+
+/* Fade-in animation for h1 tags */
+.fade-in-h1 {
+    opacity: 0;
+    animation: fadeInH1 1.5s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeInH1 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Members section */
+.members {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.member {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    width: 100%; /* Set width to 100% initially */
+    max-width: 400px; /* Set a maximum width */
+}
+
+.member h2 {
+    font-size: 30px;
+}
+
+.member:nth-child(2) {
+    flex-direction: row-reverse; /* Reverse the flex direction for the second member */
+}
+
+.member img {
+    width: 100%;
+    max-width: 200px; /* Adjust as needed */
+    height: auto;
+    border-radius: 10px; /* Add border radius to create slightly rounded corners */
+    filter: contrast(120%) saturate(150%); /* Convert the image to black and white and increase saturation */
+    border: 2px solid #fff; /* Add a 2px thick white border */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Add a subtle shadow to create depth */
+}
+
+.member .description {
+    max-width: 80%; /* Adjust as needed */
+    text-align: left;
+    padding: 0 10px;
+    font-size: 20px;
+}
+
+/* Setlist section */
+.setlist {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+}
+
+.song {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc; /* Add a border between songs */
+}
+
+/* Thumbnail */
+.thumbnail {
+    flex: 0 0 auto; /* Prevent the thumbnail from stretching */
+    width: 50px; /* Adjust the size of the thumbnail */
+    height: 50px;
+    margin-right: 10px;
+}
+
+/* Song and Artist Name */
+.song-info {
+    flex: 1; /* Allow the song name and artist to grow */
+    margin-right: 10px;
+}
+
+/* Duration */
+.song-duration {
+    flex: 0 0 auto; /* Prevent the duration from stretching */
+    margin-right: 10px;
+}
+
+.song-duration span.colon {
+    vertical-align: top;
+    margin-right: 10px; /* Adjust as needed */
+}
+
+/* Play button */
+.play-button {
+    flex: 0 0 auto; /* Prevent the play button from stretching */
+    background-color: #ff6eff; /* Background color */
+    color: #fff; /* Text color */
+    font-family: 'Big Shoulders Display', sans-serif; /* Font family */
+    font-size: 20px; /* Font size */
+    padding: 10px 20px; /* Padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Add cursor pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.play-button:hover {
+    background-color: #ff0099; /* Darker background color on hover */
+}
+
+/* Additional CSS for the pitches section */
+.pitches {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pitch {
+    margin-bottom: 50px;
+    text-align: center;
+    opacity: 0;
+}
+
+.pitch h2 {
+    font-size: 40px;
+}
+
+.pitch p {
+    font-size: 20px;
+}
+
+.pitch img {
+    max-width: 100%; /* Ensure images don't overflow on smaller screens */
+}
+
+.description {
+    margin-top: 20px;
+}
+
+.fade-in {
+    animation: fadeIn 1.5s ease-in-out forwards;
+    animation-delay: 1.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.rounded {
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .pitch .description {
+        max-width: 100%; /* Adjust description width for smaller screens */
+    }
+}
