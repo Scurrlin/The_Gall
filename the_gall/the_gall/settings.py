@@ -70,7 +70,7 @@ WSGI_APPLICATION = 'the_gall.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        default='postgres://the_gall_user:UxYULgKR0syk3VQtjyxJpYUxcEFwfXR9@dpg-cphniccf7o1s739li210-a/the_gall',
+        default=os.getenv("DATABASE_URL"),
         conn_max_age=600
     )
 }
@@ -114,7 +114,6 @@ STATIC_URL = '/static/'
 
 # if not DEBUG:
 if not DEBUG:
-
     STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 else:

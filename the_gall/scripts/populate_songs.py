@@ -4,7 +4,6 @@ import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 import math
 
-# Load environment variables from .env file
 load_dotenv()
 
 # Fetch Spotify API credentials from environment variables
@@ -40,7 +39,7 @@ for i, song_data in enumerate(songs, start=1):
     # Check if search returned any results
     if results['tracks']['items']:
         track = results['tracks']['items'][0]
-        # Extract song details from search results
+        # Extract song details
         title = track['name']
         artist = track['artists'][0]['name']
         thumbnail_url = track['album']['images'][0]['url']

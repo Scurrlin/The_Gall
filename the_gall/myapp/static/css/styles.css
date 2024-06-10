@@ -1,20 +1,18 @@
-/* Reset default margin and padding */
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
 }
 
-/* Set black background and use Big Shoulders Display font */
 body {
     background: 
         /* Top half: solid black */
         linear-gradient(#000, #000) top,
         /* Bottom half: linear gradient from black to pink */
         linear-gradient(to bottom, #000, #AA336A) bottom;
-    background-size: 100% 51%; /* Set background size to cover top and bottom halves */
-    background-repeat: no-repeat; /* Prevent background from repeating */
+    background-size: 100% 51%;
+    background-repeat: no-repeat;
     font-family: 'Big Shoulders Display', sans-serif;
-    color: #fff; /* Set text color to white */
+    color: #fff;
 }
 
 /* Navigation styles */
@@ -33,13 +31,13 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #000; /* Black text color */
+    color: #000;
     text-decoration: none;
     font-family: 'Big Shoulders Display', sans-serif;
-    font-size: 35px; /* Adjust font size as needed */
+    font-size: 35px;
     font-weight: bold;
-    padding: 4px 8px; /* Add padding */
-    transition: all 0.3s ease; /* Add transition for smooth hover effect */
+    padding: 4px 8px;
+    transition: all 0.3s ease;
 }
 
 nav ul li a:hover {
@@ -72,7 +70,7 @@ footer {
 
 .hero img {
     width: 100%;
-    max-width: 600px; /* Adjust as needed */
+    max-width: 600px;
     height: auto;
     margin: 0 auto;
     display: block;
@@ -107,8 +105,8 @@ footer {
     align-items: center;
     justify-content: space-between;
     margin-top: 50px;
-    width: 100%; /* Set width to 100% initially */
-    max-width: 400px; /* Set a maximum width */
+    width: 100%;
+    max-width: 400px;
 }
 
 .member h2 {
@@ -121,16 +119,16 @@ footer {
 
 .member img {
     width: 100%;
-    max-width: 200px; /* Adjust as needed */
+    max-width: 200px;
     height: auto;
-    border-radius: 10px; /* Add border radius to create slightly rounded corners */
-    filter: contrast(120%) saturate(150%); /* Convert the image to black and white and increase saturation */
-    border: 2px solid #fff; /* Add a 2px thick white border */
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Add a subtle shadow to create depth */
+    border-radius: 10px;
+    filter: contrast(120%) saturate(150%); 
+    border: 2px solid #fff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 .member .description {
-    max-width: 80%; /* Adjust as needed */
+    max-width: 80%;
     text-align: left;
     padding: 0 10px;
     font-size: 20px;
@@ -147,54 +145,54 @@ footer {
     display: flex;
     align-items: center;
     padding: 10px;
-    border-bottom: 1px solid #ccc; /* Add a border between songs */
+    border-bottom: 1px solid #ccc;
 }
 
 /* Thumbnail */
 .thumbnail {
-    flex: 0 0 auto; /* Prevent the thumbnail from stretching */
-    width: 50px; /* Adjust the size of the thumbnail */
+    flex: 0 0 auto;
+    width: 50px;
     height: 50px;
     margin-right: 10px;
 }
 
 /* Song and Artist Name */
 .song-info {
-    flex: 1; /* Allow the song name and artist to grow */
+    flex: 1;
     margin-right: 10px;
 }
 
 /* Duration */
 .song-duration {
-    flex: 0 0 auto; /* Prevent the duration from stretching */
+    flex: 0 0 auto;
     margin-right: 20px;
 }
 
 .song-duration span { 
-    margin-right: 1px; /* Adjust as needed */
+    margin-right: 1px;
 }
 
 .song-duration .colon {
-    vertical-align: 15%; /* Align the colon slightly above the baseline */
-    margin-right: 1px; /* Adjust as needed */
+    vertical-align: 15%;
+    margin-right: 1px;
 }
 
 /* Play button */
 .play-button {
-    flex: 0 0 auto; /* Prevent the play button from stretching */
-    background-color: #ff6eff; /* Background color */
-    color: #fff; /* Text color */
-    font-family: 'Big Shoulders Display', sans-serif; /* Font family */
-    font-size: 20px; /* Font size */
-    padding: 10px 20px; /* Padding */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Add cursor pointer on hover */
-    transition: background-color 0.3s ease; /* Smooth transition */
+    flex: 0 0 auto;
+    background-color: #ff6eff;
+    color: #fff;
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .play-button:hover {
-    background-color: #ff0099; /* Darker background color on hover */
+    background-color: #ff0099;
 }
 
 /* Additional CSS for the pitches section */
@@ -219,7 +217,7 @@ footer {
 }
 
 .pitch img {
-    max-width: 100%; /* Ensure images don't overflow on smaller screens */
+    max-width: 100%;
 }
 
 .description {
@@ -246,6 +244,6 @@ footer {
 
 @media screen and (max-width: 768px) {
     .pitch .description {
-        max-width: 100%; /* Adjust description width for smaller screens */
+        max-width: 100%;
     }
 }

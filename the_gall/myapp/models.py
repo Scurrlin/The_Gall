@@ -8,8 +8,8 @@ class Song(models.Model):
     thumbnail_url = models.URLField()
     playback_url = models.URLField(default='')
     duration_ms = models.IntegerField()
-    duration_minutes = models.IntegerField(default=0)  # Manually define default value
-    duration_seconds = models.IntegerField(default=0)  # Manually define default value
+    duration_minutes = models.IntegerField(default=0)
+    duration_seconds = models.IntegerField(default=0)
 
     def save(self, *args, **kwargs):
         # Convert duration_ms to minutes and seconds
