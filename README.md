@@ -1,6 +1,8 @@
 # The Gall
 A custom promotional website for my band!
 
+![banner_image](https://i.imgur.com/nwesRNm.png)
+
 <p align="center">
   <kbd>
     <img src="https://i.imgur.com/nwesRNm.png" alt="banner_image">
