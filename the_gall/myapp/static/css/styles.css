@@ -205,7 +205,6 @@ footer {
 .pitch {
     margin-bottom: 50px;
     text-align: center;
-    opacity: 0;
 }
 
 .pitch h2 {
@@ -223,22 +222,6 @@ footer {
 .description {
     margin-top: 20px;
 }
-
-/*
-.fade-in {
-    animation: fadeIn 1.5s ease-in-out forwards;
-    animation-delay: 1s;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-*/
 
 .rounded {
     border-radius: 10px;
