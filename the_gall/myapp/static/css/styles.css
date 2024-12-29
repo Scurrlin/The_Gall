@@ -224,6 +224,7 @@ footer {
     margin-top: 20px;
 }
 
+/*
 .fade-in {
     animation: fadeIn 1.5s ease-in-out forwards;
     animation-delay: 1s;
@@ -237,6 +238,7 @@ footer {
         opacity: 1;
     }
 }
+*/
 
 .rounded {
     border-radius: 10px;
