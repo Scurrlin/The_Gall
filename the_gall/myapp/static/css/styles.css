@@ -244,3 +244,8 @@ footer {
         margin-top: 20px;
     }
 }
+
+.cellphone-video {
+    border-radius: 15px;
+    overflow: hidden;
+}
